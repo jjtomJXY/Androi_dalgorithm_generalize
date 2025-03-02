@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0faa980-6096-4e49-a134-f0a18e4dcdf1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sortAll.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/link_list/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/link_list/link_list1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/link_list/link_list2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/link_list/link_list3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/link_list/link_list4.java" afterDir="false" />
-    </list>
+    <list default="true" id="f0faa980-6096-4e49-a134-f0a18e4dcdf1" name="更改" comment="初始化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,11 +61,24 @@
       <updated>1740653760272</updated>
       <workItem from="1740653761355" duration="6317000" />
       <workItem from="1740825391008" duration="4619000" />
-      <workItem from="1740913274741" duration="2379000" />
+      <workItem from="1740913274741" duration="3030000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <option name="closed" value="true" />
+      <created>1740915866258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740915866258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
   </component>
 </project>

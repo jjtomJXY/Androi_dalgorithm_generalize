@@ -17,8 +17,21 @@ public class link_list4 {
         return false; // 访问到了链表末尾，无环
     }
 
-    // 创建相交链表的辅助方法
-
+    public ListNode detectCycle(ListNode head) {
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) { // 相遇
+                while (slow != head) { // 再走 a 步
+                    slow = slow.next;
+                    head = head.next;
+                }
+                return slow;
+            }
+        }
+        return null;
+    }
 
     public static void main(String[] args) {
         // 创建一个无环链表 1 -> 2 -> 3
