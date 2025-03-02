@@ -34,27 +34,43 @@ public class link_list4 {
     }
 
     public static void main(String[] args) {
-        // 创建一个无环链表 1 -> 2 -> 3
-        ListNode nonCyclicList = new ListNode(1);
-        nonCyclicList.next = new ListNode(2);
-        nonCyclicList.next.next = new ListNode(3);
-
-        // 创建一个有环链表 1 -> 2 -> 3，其中 3 指向 2
-        ListNode cyclicList = new ListNode(1);
+        // 创建一个有环的链表
+        // 构建链表 1 -> 2 -> 3 -> 4 -> 2（形成环）
+        ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(2);
         ListNode node3 = new ListNode(3);
-        cyclicList.next = node2;
+        ListNode node4 = new ListNode(4);
+
+        node1.next = node2;
         node2.next = node3;
-        node3.next = node2; // 形成环
+        node3.next = node4;
+        node4.next = node2; // 形成环
+
+        // 创建一个无环的链表
+        // 构建链表 5 -> 6 -> 7
+        ListNode node5 = new ListNode(5);
+        ListNode node6 = new ListNode(6);
+        ListNode node7 = new ListNode(7);
+
+        node5.next = node6;
+        node6.next = node7;
 
         link_list4 solution = new link_list4();
 
-        // 判断无环链表是否有环
-        boolean hasCycle1 = solution.hasCycle(nonCyclicList);
-        System.out.println("链表 1 -> 2 -> 3 是否有环: " + hasCycle1);
+        // 检测有环链表的环起始节点
+        ListNode cycleStartNode = solution.detectCycle(node1);
+        if (cycleStartNode != null) {
+            System.out.println("有环链表的环起始节点的值为: " + cycleStartNode.val);
+        } else {
+            System.out.println("有环链表检测出错，未找到环起始节点。");
+        }
 
-        // 判断有环链表是否有环
-        boolean hasCycle2 = solution.hasCycle(cyclicList);
-        System.out.println("链表 1 -> 2 -> 3（存在环）是否有环: " + hasCycle2);
+        // 检测无环链表的环起始节点
+        ListNode noCycleStartNode = solution.detectCycle(node5);
+        if (noCycleStartNode == null) {
+            System.out.println("无环链表不存在环。");
+        } else {
+            System.out.println("无环链表检测出错，不应找到环起始节点。");
+        }
     }
 }

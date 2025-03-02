@@ -1,6 +1,6 @@
 package link_list;
 
-class ListNode {
+public class ListNode {
     int val;
     ListNode next;
 
